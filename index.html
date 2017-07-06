@@ -25,6 +25,28 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script>
+    function AjaxFormRequest(result_id,formMain,url) {
+                jQuery.ajax({
+                    url:     url,
+                    type:     "POST",
+                    dataType: "html",
+                    data: jQuery("#"+formMain).serialize(), 
+                    success: function(response) {
+                    document.getElementById(result_id).innerHTML = response;
+                },
+                error: function(response) {
+                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+                }
+             });
+
+             $(':input','#formMain')
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .removeAttr('checked')
+        .removeAttr('selected');
+    }
+</script>
     
     
   </head>
@@ -84,16 +106,16 @@
                    </ul>
                </div>
                <div class="col-md-6 col-xs-12" id="form">
-                   <form action="" class="centured">
-                   <input type="hidden" name="project_name" value="AGO-Mebel">
-                   <input type="hidden" name="admin_email" value="steel-nut@yandex.ru">
-                   <input type="hidden" name="form_subject" value="Новая заявка на мебель">
-                      <h4 class="form-h4">Заказать просчет</h4>
-                       <input type="text" placeholder="Ваше имя">
-                       <input type="text" placeholder="Номер телефона с кодом">
-                       <input class="file" type="file" accept="image/jpeg">
-                       <button type="submit" class="submit">Отправить</button>
-                   </form>
+                   <div class="wrapper">
+   <div class="form">         
+    <form method="post" action="" id="formMain" name="formMain" class="centured">
+    <h4> Получите скидку в 15% </h4>
+        <input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/>
+        <input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш телефон" maxlength="30" autocomplete="off" required/>
+        <input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+    </form>
+   </div>
+</div>
                    
                </div>
            </div>
@@ -388,7 +410,7 @@
                               <p>Вся наша мебель выполняется по европейским стандартам и имеет высокое качество</p></div>
                              </div>
                          </div>
-                         <a href="#modal10" class="ss">Бесплатная консультация</a>
+                         <a href="#modal10" class="ss">Наши контакты</a>
                          <div class="modal1" id="modal10"><div class="popup"><a href="#garant" class="close">X</a> 
                          <h3>Контакты</h3>
                         <p> 

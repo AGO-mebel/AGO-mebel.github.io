@@ -10,8 +10,8 @@
 <?php
 if(!empty($_POST['telephone'] ))
 {
-$to = "почта@.ru";
-$from = 'почта@.ru';
+$to = "steel-nut@yandex.ru";
+$from = 'agm';
 $subject = "Проверка почты";
 $message = 'Имя: '.$_POST['name'].'; Телефон: '.$_POST['telephone'].';';
 $headers = "Content-type: text/html; charset=UTF-8 \r\n";

@@ -1,0 +1,67 @@
+@media only screen and (max-width: 992px) {
+    .container { width: 100%;
+    }
+    h4 {font-size: 24px;}
+    .slider {width: 100%;
+    }
+    video {width: 70%;}
+    .vd a {display: none;}
+    .garant i {font-size: 50px;
+    margin-top: 10px;}
+    .garant hr {width: 20%;}
+    
+}
+@media only screen and (max-width: 768px){
+    .header-text {color: #fff;
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+background: rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+    padding-top: 8%;
+    padding-bottom: 9%;
+}
+.header-text p {display: none;}
+.modal1:target {width: 100%;
+padding: 0;
+margin: 0;}
+
+    
+}
+@media only screen and (max-width: 400px){
+form {
+    display: none;
+}
+
+
+}
+@media only screen and (max-width: 320px) {
+    .container {width: 100%;
+    background-color: none;}
+    p {font-size: 12px;
+    display: block;
+    text-align: center;padding: 0;
+    margin: 0 auto;}
+    form {background: none;}
+    .form-h4 {font-size: 14px;}
+    .submit {font-size: 10px;
+    width: 150px;}
+    form input {width: 150px;
+    float: left;}
+    .header-text {color: #fff;
+    font-size: 20px;
+    display: block;
+    padding: 15px;
+    border: 1px solid #fff;
+    width: 100%;
+    height: auto;
+background: rgba(0, 0, 0, 0.3);
+margin: 0 auto;
+    padding-top: 8%;
+    padding-bottom: 9%;
+}
+.header-text p {display: none;}
+}

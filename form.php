@@ -10,12 +10,12 @@
 <?php
 if(!empty($_POST['telephone'] ))
 {
-$to = "steel-nut@yandex.ru";
-$from = 'steel-nut@yandex.ru';
-$subject = "Проверка почты";
+$to = "agomebel@gmail.com";
+$from = 'rushimby@yandex.ru';
+$subject = "Заявка с сайта";
 $message = 'Имя: '.$_POST['name'].'; Телефон: '.$_POST['telephone'].';';
 $headers = "Content-type: text/html; charset=UTF-8 \r\n";
-$headers .= "From: <steel-nut@yandex.ru>\r\n";
+$headers .= "From: <Привет от Богдана!:)>\r\n";
 $result = mail($to, $subject, $message, $headers);
 
     if ($result){ 

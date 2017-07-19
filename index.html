@@ -1,461 +1,2239 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>AGM-Mebel Мебель на заказ в Минске</title>
-    
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="img/logo-min.png">
+	<meta name="theme-color" content="#636365">
+	<meta name="description" content="Уникальная бесшовная мебель премиум класса от ведущих производителей. Доставка по СНГ. Индивидуальный дизайн проект. Любые размеры и цветовая гамма. AGO-mebel">
+	<meta name="keywords" content="AGO-mebel,
+	AGO,
+	АГО+мебель
+	изготовление мебели +на заказ,
+  мебель +для ванной комнаты +на заказ,
+  мебель +для ванной комнаты под заказ,
+  мебель +для ванной мебель +на заказ минск,
+  мебель +для ванной под заказ,
+  мебель +для ванны под заказ,
+  мебель заказ цена фото,
+  мебель под заказ,
+  мебель под заказ +в минске,
+  заказ корпусной мебели недорого,
+  изготовление корпусной мебели +на заказ,
+  изготовление корпусной мебели +на заказ +в минске,
+  изготовление корпусной мебели +по индивидуальным заказам,
+  корпусная мебель +на заказ,
+  корпусная мебель +на заказ +в минске,
+  корпусная мебель +по индивидуальному заказу,
+  корпусная мебель офиса заказ,
+  корпусная мебель под заказ,
+  корпусная мебель под заказ +в минске,
+  корпусная мебель спальни заказ,
+  сделать мебель корпусную +в минске под заказ,
+  горка под заказ,
+  горка под заказ +в минске цены,
+  горки +на заказ,
+  горки +на заказ +в минске,
+  горки +на заказ мебель,
+  горки мебельные фото +и цены +на заказ,
+  горки под заказ +в минске,
+  мебель под заказ горки,
+  стенка горка под заказ,
+  стенки горки под заказ фото">
+	<title>AGO-mebel, мебель премиум класса с доствкой по СНГ</title>
+	<link rel="shortcut icon" href="img/logo.png" type="img/png">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+	<script src="https://use.fontawesome.com/8f973f9b3c.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/8f973f9b3c.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="ism/css/my-slider.css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		function AjaxFormRequest(result_id,formMain,url) {
+			jQuery.ajax({
+				url:     url,
+				type:     "POST",
+				dataType: "html",
+				data: jQuery("#"+formMain).serialize(), 
+				success: function(response) {
+					document.getElementById(result_id).innerHTML = response;
+				},
+				error: function(response) {
+					document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+				}
+			});
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script>
-    function AjaxFormRequest(result_id,formMain,url) {
-                jQuery.ajax({
-                    url:     url,
-                    type:     "POST",
-                    dataType: "html",
-                    data: jQuery("#"+formMain).serialize(), 
-                    success: function(response) {
-                    document.getElementById(result_id).innerHTML = response;
-                },
-                error: function(response) {
-                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
-                }
-             });
-
-             $(':input','#formMain')
-        .not(':button, :submit, :reset, :hidden')
-        .val('')
-        .removeAttr('checked')
-        .removeAttr('selected');
-    }
-</script>
-    
-    
-  </head>
-  <body>
-  <div class="container green-line"></div>
-   <div class="container top-header">
-       <div class="row">
-           <div class="col-md-12 logo-header">
-              <div class="col-md-9"> <img src="img/logo.png" alt="AgM Mebel" class="logo">
-               <hr>
-               <h5>Когда мебель... искусство!</h5>
-               <hr></div>
-              <div class="col-md-3 contacts">
-                  <h5>
-                Наши контакты:
-                 
-                  </h5>
-                  <p><i class="fa fa-phone"></i>+375 (29) 1-664-665 <br>
-                  <i class="fa fa-envelope"></i>AGOmebel@gmail.com 
-                  </p>
-                  <hr>
-                  <h5>Адрес</h5>
-                  <p><i class="fa fa-map-marker"></i> г.Минск, ул. Мазурова 1,<br>ТЦ "Камелот" 2 этаж</p>
-              </div>
-              
-           </div>
-       </div>
-   </div>
-   <div class="container sl centured">  
-   <div class="header-text">
-       <h2>Добро пожаловать на сайт компании <span>AGO-Mebel</span>
-   </h2>
-   <hr>
-   <p>AGM - это компания с многолетним стажем и десятком представителей по всему СНГ. Основным направлением компании является изготовление корпусной мебели для дома и офиса. Немецкая технология изготовления, позволяет обеспечить безупречное функционирование на протяжении всего срока эксплуатации.</p>
-   </div>
-   
-   
-   
-   
-   </div>
-   <div class="container bullet" id="bullet" name="bullet">
-      <hr>
-       <div class="row">
-           <div class="col-md-10 col-md-offset-1">
-               <div class="col-md-6 bullets">
-                   <h4 class="section2">Бесплатно!</h4>
-                   <ul>
-                       <li>
-                            <p><i class="fa fa-check"></i>Выезд замерщика (Предоставление каталога с нашими работами)</p>
-                       </li>
-                       <li>
-                          <p><i class="fa fa-check"></i>Дизайн-проект (Эскиз Вашей мебели в 3D)</p>
-                       </li>
-                       <li>
-                          <p><i class="fa fa-check"></i>Доставка по Минску (Поднятие на этаж в первое помещение)</p>
-                       </li>
-                   </ul>
-               </div>
-               <div class="col-md-6 col-xs-12" id="form">
-               <img src="img/section2.png" alt="AGO-Mebel">
-                 <!--  <div class="wrapper">
-   <div class="form">         
-    <form method="post" action="" id="formMain" name="formMain" class="centured">
-    <h4> Получите скидку в 15% </h4>
-        <input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/>
-        <input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш телефон" maxlength="30" autocomplete="off" required/>
-        <input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
-    </form>
-   </div> -->
+			$(':input','#formMain')
+			.not(':button, :submit, :reset, :hidden')
+			.val('')
+			.removeAttr('checked')
+			.removeAttr('selected');
+		}
+	</script>
+</head>
+<body>
+	<div class="header container-fluid">
+		<div class="top-header"><img src="img/logo.png" alt="AGO" class="logo"></div>
+		<div class="header-text">
+			<h1>Уют в Вашем доме<br>
+				заключается<br>
+				в нестандартных решениях!</h1>
+				<button class="btn btn-info" data-toggle="modal" data-target="#myModal9">Наши контакты</button>
+<div id="myModal9" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">X</button>
+		<h2 class="modal-tittle">Наши контакты</h2>
+	</div>	
+	<div class="modal-body">
+<div class="container">
+<div class="row">
+<div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.06096511762!2d27.431388815461514!3d53.895120341165246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdadecfcda71d%3A0x22ffed1710e0e7ea!2z0JzQtdCx0LXQu9GM0L3Ri9C5INGG0LXQvdGC0YAg0JrQsNC80LXQu9C-0YI!5e0!3m2!1sru!2sby!4v1500422664504" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<h3><i class="fa fa-phone"></i>+375 29 611 27 47</h3>
+<h3><i class="fa fa-mail"></i>agomebel@gmail.com</h3>
 </div>
-                   
-               </div>
-           </div>
-       </div>
-       <hr>
-   </div>
-   <div class="container work-pr">
-                 <div class="col-md-10 col-md-offset-1">
-           <div class="col-md-3 col-sm-6 col-xs-12 ff3"><span>1344</span>
-           <h4>Единицы изготовлено</h4>
-           </div>
-           <div class="col-md-3 col-sm-6 col-xs-12 ff3"><span>368</span>
-           <h4>Дизайн-проектов реализовано</h4>
-           </div>
-           <div class="col-md-3 col-sm-6 col-xs-12 ff3"><span>24</span>
-           <h4>Сотрудника в штате</h4>
-           </div>
-           <div class="col-md-3 col-sm-6 col-xs-12 ff3"><span>720</span>
-           <h4>Квадратных метров производственной площади</h4>
-           </div>
-           </div>
-                  </div>
-                  
-                  <div class="container centured maked" id="maked">
-    <div class="row">
-                          <h2>Мы производим</h2>
-                          <div class="col-md-10 col-md-offset-1 col-sm-12">
-                              <div class="col-md-4 col-sm-6 we-make">
-                                  <img src="img/1.jpg" alt="#">
-                                  <h4>Горки</h4>
-                                  <p><i class="fa fa-money"></i>От 345 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>После нас остается чистота 
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Прячем все провода в конструкцию мебели
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 3-5 дней</p>
-                                  <a href="#modal1">Смотреть работы</a>
-                                  <div class="modal1" id="modal1"><div class="popup"><a href="#maked" class="close">X</a> <h3>Изготовленные горки</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/gr1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/gr2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/gr3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/gr4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/gr5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/gr6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/gr7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/gr9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/gr10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                              <div class="col-md-4 col-sm-6 we-make">
-                                  <img src="img/2.jpg" alt="#">
-                                  <h4>Кухни</h4>
-                                  <p><i class="fa fa-money"></i>От 780 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление нестандартных форм;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Подгонка к стенам 0 мм;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 7-21 день <br>
-                                  </p>
-                                  <a href="#modal2">Смотреть работы</a>
-                                  <div class="modal1" id="modal2"><div class="popup"><a href="#maked" class="close">X</a> <h3>Изготовленные кухни</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/kj1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/kj2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/kj3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/kj4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/kj5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kj6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kj7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kj9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kj10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                              <div class="col-md-4 we-make">
-                                  <img src="img/3.jpg" alt="#">
-                                  <h4>Тумбы под TV</h4>
-                                  <p><i class="fa fa-money"></i>От 196 BYN
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Возможно использование стекла, пластика и крашенных элементов
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Подсветка по желанию заказчика;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 3-7 дней</p>
-                                  <a href="#modal3">Смотреть работы</a>
-                                  <div class="modal1" id="modal3"><div class="popup"><a href="#maked" class="close">X</a> <h3>Изготовленные тумбы под TV</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/tr1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/tr2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/tr3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/tr4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/tr5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/tr7.jpg" alt="слайд7"></div>
-    <div class="slide-images"><img src="img/sl/tr9.jpg" alt="слайд8"></div>
-    <div class="slide-images"><img src="img/sl/tr10.jpg" alt="слайд9"></div>
-    </div></div></div>
-                              </div>
-                          </div>
-                          
-                    </div>
-                  </div>
-                  <hr>
-                   <div class="container centured maked" id="maked2">
-    <div class="row">
-                          <div class="col-md-10 col-md-offset-1">
-                              <div class="col-md-4 col-sm-6  we-make">
-                                  <img src="img/9.jpg" alt="#">
-                                  <h4>Тумба для ванной комнаты</h4>
-                                  <p><i class="fa fa-money"></i>От 180 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Любой размер;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Бесшовная покраска - защита от попадания влаги;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление: бесшовная 21-30 дней,
-                                  стандарт до 10 дней </p>
-                                  <a href="#modal4">Смотреть работы</a>
-                                  <div class="modal1" id="modal4"><div class="popup"><a href="#maked2" class="close">X</a> <h3>Изготовленные тумбы для ванн</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/sl1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/sl2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/sl3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/sl4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/sl5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/sl6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/sl7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/sl9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/sl10.jpg" alt="слайд5"></div>
-    </div></div></div>
-
-                              </div>
-                              <div class="col-md-4 col-sm-6 we-make">
-                                  <img src="img/8.jpg" alt="#">
-                                  <h4>Комоды</h4>
-                                  <p><i class="fa fa-money"></i>От 150 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Любая цветовая гамма;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>возможно использывание пластика и стекла;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 3-7 дней</p>
-                                  <a href="#modal5">Смотреть работы</a>
-                                  <div class="modal1" id="modal5"><div class="popup"><a href="#maked2" class="close">X</a> <h3>Изготовленные комоды</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/kd1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/kd2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/kd3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/kd4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/kd5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kd6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kd7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kd9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/kd10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                              <div class="col-md-4 we-make">
-                                  <img src="img/7.jpg" alt="#">
-                                  <h4>Шкафы</h4>
-                                  <p><i class="fa fa-money"></i>От 248 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Богатый асортимент выбора фасада
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Крашенные стекла, зеркала, пластик, кожа, пескострйная обработка, фото-печать
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>1-5 дней</p>
-                                  <a href="#modal6">Смотреть работы</a>
-                                  <div class="modal1" id="modal6"><div class="popup"><a href="#maked2" class="close">X</a> <h3>Изготовленные шкафы</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/ml1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/ml2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/ml3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/ml4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/ml5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ml6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ml7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ml9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ml10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                          </div>
-                          
-                    </div>
-                  </div>
-                  <hr>
-                   <div class="container centured maked" id="maked3">
-    <div class="row">
-                         <div class="col-md-10 col-md-offset-1">
-                              <div class="col-md-4 col-sm-6 we-make">
-                                  <img src="img/10.jpg" alt="#">
-                                  <h4>Прихожие</h4>
-                                  <p><i class="fa fa-money"></i>От 168 BYN
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Возможна утсановка зеркала в полный рост;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Подсветка;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 3-7 дней
-                                  </p>
-                                  <a href="#modal7">Смотреть работы</a>
-                                  <div class="modal1" id="modal7"><div class="popup"><a href="#maked3" class="close">X</a> <h3>Изготовленные прихожие</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/qw1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/qw2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/qw3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/qw4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/qw5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/qw6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/qw7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/qw9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/qw10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                              <div class="col-md-4 col-sm-6 we-make">
-                                  <img src="img/16.jpg" alt="#">
-                                  <h4>Детские</h4>
-                                  <p><i class="fa fa-money"></i>От 237 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Защита от травм;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Рабочее место для учеников;
-                                  <br>
-                                   <i class="fa fa-chevron-right"></i>Кровати трансформеры;
-                                   <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление до 14 дней</p>
-                                  <a href="#modal8">Смотреть работы</a>
-                                  <div class="modal1" id="modal8"><div class="popup"><a href="#maked3" class="close">X</a> <h3>Изготовленные детские</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/ds1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/ds2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/ds3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/ds4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/ds5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ds6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ds7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ds9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/ds10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                              <div class="col-md-4 we-make">
-                                  <img src="img/17.jpg" alt="#">
-                                  <h4>Гардеробные</h4>
-                                  <p><i class="fa fa-money"></i>От 169 рублей
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Корпусные системы из ДСП;
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Модульные системы "Эльф";
-                                  <br>
-                                  <i class="fa fa-chevron-right"></i>Изготовление 7-15 дней</p>
-                                  <a href="#modal9">Смотреть работы</a>
-                                  <div class="modal1" id="modal9"><div class="popup"><a href="#maked3" class="close">X</a> <h3>Изготовленные гардеробные</h3>
-                                  <div class="slider-1">
-    <div class="slide-images"><img src="img/sl/r1.jpg" alt="слайд1"></div>
-    <div class="slide-images"><img src="img/sl/r2.jpg" alt="слайд2"></div>
-    <div class="slide-images"><img src="img/sl/r3.jpg" alt="слайд3"></div>
-    <div class="slide-images"><img src="img/sl/r4.jpg" alt="слайд4"></div>
-    <div class="slide-images"><img src="img/sl/r5.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/r6.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/r7.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/r9.jpg" alt="слайд5"></div>
-    <div class="slide-images"><img src="img/sl/r10.jpg" alt="слайд5"></div>
-    </div></div></div>
-                              </div>
-                          </div>
-                          
-                    </div>
-                  </div>
-                 
-                  <hr>
-                  <div class="container garant centured" id="garant">
-                      <div class="row">
-                          <div class="col-md-10 col-md-offset-1">
-                             <h2>Заказывая у нас Вы получаете</h2>
-                              <div class="col-md-3"><i class="fa fa-file-text-o"></i>
-                              <h4>Договор</h4>
-                              <hr class="hr1">
-                              <p>Мы работаем официально, по договору "Оказания услуг"</p>
-                              
-                              </div>
-                              <div class="col-md-3"><i class="fa fa-male"></i>
-                              <h4>Квалефицированных мастеров</h4>
-                              <hr class="hr2">
-                              <p>Мы на рынке услуг с 2003 года, 19 сотрудников работают с нами, с самого открытия</p></div>
-                              <div class="col-md-3"><i class="fa fa-hourglass-half"></i>
-                              <h4>2 года гарантии</h4>
-                              <hr class="hr3">
-                              <p>В договоре мы указываем срок гарантии не менее двух лет</p></div>
-                              <div class="col-md-3"><i class="fa fa-thumbs-o-up"></i>
-                              <h4>Мебель европейского уровня</h4>
-                              <hr class="hr4">
-                              <p>Вся наша мебель выполняется по европейским стандартам и имеет высокое качество</p></div>
-                             </div>
-                         </div>
-                         <a href="#modal10" class="ss">Наши контакты</a>
-                         <div class="modal1" id="modal10"><div class="popup"><a href="#garant" class="close">X</a> 
-                         <h3>Контакты</h3>
-                        <p> 
-<i class="fa fa-phone"></i>+375 (29) 1-664-665 <br>
-                        <i class="fa fa-envelope">
-</i>AGOmebel@gmail.com <br>
-<i class="fa fa-map-marker"></i>г.Минск, ул. Мазурова 1, <br>
-                         ТЦ "Камелот" 2 этаж </p>
-                                  </div></div>
-                  </div>
-                  <div class="container vd">
-                  <div class="row">
-                  <div class="col-md-10 col-md-offset-1">
-                     <div class="col-md-6">
-                    
-                     <h2> <hr>Видео-презентация нашего производсва</h2>
-                     <hr></div>
-                     <div class="col-md-6">
-                         <video src="Agmmebel.mp4" class="video" controls></video>
-                         
-                     </div>
-                      
-                  </div>
-                  </div>
-                  </div>
-<div class="container otz">
-   <div class="row">
-    <div class="col-md-12 footer">
-           <img src="img/logo.png" alt="">
-            <h5 class="phone"><i class="fa fa-phone"></i>+375 (29) 1-664-665</h5>
-            <h5><i class="fa fa-map-marker"></i>г.Минск, ул. Мазурова 1, <br>
-   ТЦ "Камелот" 2 этаж</h5>
+		</div>
 </div>
-    </div>
-</div>              
-       
-       
-    
+			
+		
+		
+	</div>
+	<div class="mpodal-footer">
+		<p class="center">Мы работаем: 10.00 - 20.00 (ежедневно)</p>
+	</div>
+	</div>
+</div>
+</div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+			</div>
+		</div>
+		<div class="container-fluid section2">
+			<h2>Почему мебель <span>AGO</span> 
+превосходит ожидания
+своих хозяев?</h2>
+			<div class="pre">
+				<div class="section2-permission">
+					<i class="fa fa-check"></i>
+					<h4>Любая идея
+в индивидуальном
+воплощении</h4>
+					<p>Наши дизайнеры создадут для вас мебель в любом стиле, цвете, материале, <strong>любым размером</strong> и с функциональными особенностями.</p>
+				</div>
+				<div class="section2-permission">
+					<i class="fa fa-check"></i>
+					<h4>Эргономичность
+и функциональность</h4>
+					<p>Профессиональное планирование пространства и соблюдение золотых правил в проектировании позволяют нам создавать максимально удобные интерьеры, где каждая вещь имеет свое место.</p>
+				</div>
+				<div class="section2-permission">
+					<i class="fa fa-check"></i>
+					<h4>Продуманные
+детали</h4>
+					<p>При проектировании мебели мы продумываем <strong>каждую деталь</strong> — от встроенной техники до расположения полочек и фурнитуры.</p>
+				</div>
+				<div class="section2-permission">
+					<i class="fa fa-check"></i>
+					<h4>10 лет
+эксплуатации</h4>
+					<p>Наша мебель выполнена на современном производстве из долговечных материалов. Что позволяет обеспечить срок эксплуатации гарнитуров не менее 10 лет.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section-cta container-fluid">
+			<div class="cta">
+				<div class="text-cta">
+					<h3>Отличный бонус<br>для наших клиентов!</h3>
+					<hr>
+					<p>При заказе от двух изделий, <br>
+					<span>В ПОДАРОК!</span>
+						Зеркало c фоцетом и<br> в полный рост<br></p>
+						<div class="timer"><script src="http://megatimer.ru/s/5bf2958878169bedb26ed2eb90aef3b1.js"></script></div></div>
+						<div class="col-md-6 form">
+
+
+							<form method="post" action="" id="formMain" name="formMain">
+								<h3>Заказать рассчет <br>стоимости</h3>
+								<input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/>
+								<input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш телефон" maxlength="30" autocomplete="off" required/>
+								<input id="button" type="button"  value="Отправить" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="our-work centured container-fluid">
+				<h2>Каталог <strong>выполненых</strong> работ</h2>
+					<div class="wrk container-fluid">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/1.jpg" alt="">
+							<h3>Горки и секции</h3>
+							
+							<button class="btn" data-toggle="modal" data-target="#myModal1">Смотреть работы</button>
+<div id="myModal1" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации! <br>
+		</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_1" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>	
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/gorki/IMG_1111.JPG" alt="#">
+		<div class="carousel-caption">
+			<h2>016</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/gorki/IMG_1977.JPG" alt="#">
+		<div class="carousel-caption">
+			<h2>024</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/gorki/IMG_2186.JPG" alt="#">
+		<div class="carousel-caption">
+			<h2>037</h2>
+			
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/gorki/IMG_2187.JPG" alt="041">
+		<div class="carousel-caption">
+			<h2>041</h2>
+			
+		</div>
+	</div>
+	<div class="item">
+			<img src="img/gorki/1 (1).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>061</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (2).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>062</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (3).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>063</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (4).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>064</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (5).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>065</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (6).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>066</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (8).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>068</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1 (9).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>069</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(10).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>071</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(11).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>0611</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(12).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>0612</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(13).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>021</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(14).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>022</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(15).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>023</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(16).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>024</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(17).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>025</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(18).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>026</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(19).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>027</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/gorki/1(20).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>028</h2>
+			</div>
+		</div>
+</div>
+<a href="#carousel_1" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_1" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="mpodal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/2.1.jpg" alt="">
+							<h3>Комоды</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal2">Смотреть работы</button>
+<div id="myModal2" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_3" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+			<li data-target="#carousel1" data-slide-to="17"></li>
+			<li data-target="#carousel1" data-slide-to="18"></li>
+			<li data-target="#carousel1" data-slide-to="19"></li>
+			<li data-target="#carousel1" data-slide-to="20"></li>
+			<li data-target="#carousel1" data-slide-to="21"></li>
+			<li data-target="#carousel1" data-slide-to="22"></li>
+			<li data-target="#carousel1" data-slide-to="23"></li>
+			<li data-target="#carousel1" data-slide-to="24"></li>
+			<li data-target="#carousel1" data-slide-to="25"></li>
+
+		</ol>
+<div class="carousel-inner">
+		<div class="item active">
+			<img src="img/komod/1 (1).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>101</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (2).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>102</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (3).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>103</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (4).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>104</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (5).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>105</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (6).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>106</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (7).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>107</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (8).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>108</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (9).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>109</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (10).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>110</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (11).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>111</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (12).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>112</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (13).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>113</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (14).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>114</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (15).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>115</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (16).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>116</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (17).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>117</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (18).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>118</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (19).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>119</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (20).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>120</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (21).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>121</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (22).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>122</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (23).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>123</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (24).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>124</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="img/komod/1 (25).JPG" alt="">
+			<div class="carousel-caption">
+				<h2>125</h2>
+			</div>
+		</div>
+</div>
+<a href="#carousel_3" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_3" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="mpodal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+					</div>
+					<div class="wrk container-fluid">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/Moskou.jpg" alt="">
+							<h3>Кухни и барные стойки</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal3">Смотреть работы</button>
+<div id="myModal3" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_4" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+			<li data-target="#carousel1" data-slide-to="17"></li>
+			<li data-target="#carousel1" data-slide-to="18"></li>
+			<li data-target="#carousel1" data-slide-to="19"></li>
+			<li data-target="#carousel1" data-slide-to="20"></li>
+			<li data-target="#carousel1" data-slide-to="21"></li>
+			<li data-target="#carousel1" data-slide-to="22"></li>
+			<li data-target="#carousel1" data-slide-to="23"></li>
+			<li data-target="#carousel1" data-slide-to="24"></li>
+			<li data-target="#carousel1" data-slide-to="25"></li>
+			<li data-target="#carousel1" data-slide-to="26"></li>
+			<li data-target="#carousel1" data-slide-to="27"></li>
+			<li data-target="#carousel1" data-slide-to="28"></li>
+			<li data-target="#carousel1" data-slide-to="29"></li>
+			<li data-target="#carousel1" data-slide-to="30"></li>
+			<li data-target="#carousel1" data-slide-to="31"></li>
+			<li data-target="#carousel1" data-slide-to="32"></li>
+			<li data-target="#carousel1" data-slide-to="33"></li>
+			<li data-target="#carousel1" data-slide-to="34"></li>
+			<li data-target="#carousel1" data-slide-to="35"></li>
+			<li data-target="#carousel1" data-slide-to="36"></li>
+			<li data-target="#carousel1" data-slide-to="37"></li>
+			<li data-target="#carousel1" data-slide-to="38"></li>
+			<li data-target="#carousel1" data-slide-to="39"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/kuxni/1 (1).jpg" alt="#">
+		<div class="carousel-caption">
+			<h2>201</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (2).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>202</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (3).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>203</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (4).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>204</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (5).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>205</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (6).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>206</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (7).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>207</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (8).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>208</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (9).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>209</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (10).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>210</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (11).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>211</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (12).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>212</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (13).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>213</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (14).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>214</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (15).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>215</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (16).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>216</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (17).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>217</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (18).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>218</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (19).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>219</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (20).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>220</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (21).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>221</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (22).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>222</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (23).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>223</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (24).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>224</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (25).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>225</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (26).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>226</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (27).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>227</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (28).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>228</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (29).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>229</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (30).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>230</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (31).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>231</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (32).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>232</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (33).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>233</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (34).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>234</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (35).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>235</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (36).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>236</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (37).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>237</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (38).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>238</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (39).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>239</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kuxni/1 (40).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>240</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_4" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_4" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="mpodal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/5.jpg" alt="">
+							<h3>Шкафы</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal4">Смотреть работы</button>
+<div id="myModal4" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_5" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+			<li data-target="#carousel1" data-slide-to="17"></li>
+			<li data-target="#carousel1" data-slide-to="18"></li>
+			<li data-target="#carousel1" data-slide-to="19"></li>
+			<li data-target="#carousel1" data-slide-to="20"></li>
+			<li data-target="#carousel1" data-slide-to="21"></li>
+			<li data-target="#carousel1" data-slide-to="22"></li>
+			<li data-target="#carousel1" data-slide-to="23"></li>
+			<li data-target="#carousel1" data-slide-to="24"></li>
+			<li data-target="#carousel1" data-slide-to="25"></li>
+			<li data-target="#carousel1" data-slide-to="26"></li>
+			<li data-target="#carousel1" data-slide-to="27"></li>
+			<li data-target="#carousel1" data-slide-to="28"></li>
+			<li data-target="#carousel1" data-slide-to="29"></li>
+			<li data-target="#carousel1" data-slide-to="30"></li>
+			<li data-target="#carousel1" data-slide-to="31"></li>
+			<li data-target="#carousel1" data-slide-to="32"></li>
+			<li data-target="#carousel1" data-slide-to="33"></li>
+			<li data-target="#carousel1" data-slide-to="34"></li>
+			<li data-target="#carousel1" data-slide-to="35"></li>
+			<li data-target="#carousel1" data-slide-to="36"></li>
+			<li data-target="#carousel1" data-slide-to="37"></li>
+			<li data-target="#carousel1" data-slide-to="38"></li>
+			<li data-target="#carousel1" data-slide-to="39"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/shkafi/1 (1).jpg" alt="#">
+		<div class="carousel-caption">
+			<h2>401</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (2).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>402</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (3).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>403</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (4).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>404</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (5).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>405</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (6).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>406</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (7).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>407</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (8).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>408</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (9).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>409</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (10).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>410</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (11).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>411</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (12).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>412</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (13).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>413</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (14).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>414</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (15).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>415</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (16).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>416</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (17).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>417</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (18).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>418</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (19).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>419</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (20).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>420</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (21).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>421</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (22).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>422</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (23).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>423</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (24).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>424</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (25).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>425</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (26).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>426</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (27).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>427</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (28).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>428</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (29).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>429</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (30).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>430</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (31).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>431</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (32).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>432</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (33).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>433</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (34).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>434</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (35).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>435</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (36).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>436</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (37).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>437</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (38).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>438</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/shkafi/1 (40).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>440</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_5" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_5" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+					</div>
+					<div class="row wrk container-fluid">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/kid.jpg" alt="">
+							<h3>Детская мебель</h3>
+							
+							<button class="btn" data-toggle="modal" data-target="#myModal5">Смотреть работы</button>
+<div id="myModal5" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_6" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/kids/1 (1).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>701</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (2).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>702</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (3).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>703</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (4).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>704</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (5).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>705</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (6).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>706</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (7).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>707</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (8).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>708</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (9).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>709</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (10).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>710</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/kids/1 (11).jpg" alt="">
+		<div class="carousel-caption">
+			<h2>711</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_6" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_6" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+									</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/2.jpg" alt="">
+							<h3>Тумбы под TV</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal6">Смотреть работы</button>
+<div id="myModal6" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_7" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+			<li data-target="#carousel1" data-slide-to="17"></li>
+			<li data-target="#carousel1" data-slide-to="18"></li>
+			<li data-target="#carousel1" data-slide-to="19"></li>
+			<li data-target="#carousel1" data-slide-to="20"></li>
+			<li data-target="#carousel1" data-slide-to="21"></li>
+			<li data-target="#carousel1" data-slide-to="22"></li>
+			<li data-target="#carousel1" data-slide-to="23"></li>
+			<li data-target="#carousel1" data-slide-to="24"></li>
+			<li data-target="#carousel1" data-slide-to="25"></li>
+			<li data-target="#carousel1" data-slide-to="26"></li>
+			<li data-target="#carousel1" data-slide-to="27"></li>
+			<li data-target="#carousel1" data-slide-to="28"></li>
+			<li data-target="#carousel1" data-slide-to="29"></li>
+			<li data-target="#carousel1" data-slide-to="30"></li>
+			<li data-target="#carousel1" data-slide-to="31"></li>
+			<li data-target="#carousel1" data-slide-to="32"></li>
+			<li data-target="#carousel1" data-slide-to="33"></li>
+			<li data-target="#carousel1" data-slide-to="34"></li>
+			<li data-target="#carousel1" data-slide-to="35"></li>
+			<li data-target="#carousel1" data-slide-to="36"></li>
+			<li data-target="#carousel1" data-slide-to="37"></li>
+			<li data-target="#carousel1" data-slide-to="38"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/tmtv/1 (1).JPG" alt="#">
+		<div class="carousel-caption">
+			<h2>501</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (2).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>502</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (3).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>503</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (4).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>504</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (5).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>505</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (6).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>506</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (7).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>507</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (8).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>508</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (9).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>509</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (10).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>510</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (11).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>511</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (12).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>512</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (13).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>513</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (14).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>514</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (15).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>515</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (16).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>516</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (17).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>517</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (18).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>518</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (19).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>519</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (20).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>520</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (21).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>521</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (22).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>522</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (23).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>523</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (24).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>524</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/1 (25).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>525</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (1).png" alt="">
+		<div class="carousel-caption">
+			<h2>801</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (2).png" alt="">
+		<div class="carousel-caption">
+			<h2>802</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (3).png" alt="">
+		<div class="carousel-caption">
+			<h2>803</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (4).png" alt="">
+		<div class="carousel-caption">
+			<h2>804</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (5).png" alt="">
+		<div class="carousel-caption">
+			<h2>805</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (6).png" alt="">
+		<div class="carousel-caption">
+			<h2>806</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (7).png" alt="">
+		<div class="carousel-caption">
+			<h2>807</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (8).png" alt="">
+		<div class="carousel-caption">
+			<h2>808</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (9).png" alt="">
+		<div class="carousel-caption">
+			<h2>809</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (10).png" alt="">
+		<div class="carousel-caption">
+			<h2>810</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (11).png" alt="">
+		<div class="carousel-caption">
+			<h2>811</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (12).png" alt="">
+		<div class="carousel-caption">
+			<h2>812</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (13).png" alt="">
+		<div class="carousel-caption">
+			<h2>813</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tmtv/2 (14).png" alt="">
+		<div class="carousel-caption">
+			<h2>814</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_7" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_7" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+												<div class="img-work col-md-6">
+							<img src="img/project-home/8.jpg" alt="">
+							<h3>Тумбы в ванну</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal7">Смотреть работы</button>
+<div id="myModal7" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_8" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+	
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/tumba/1 (1).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>901</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (2).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>902</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (3).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>903</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (4).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>904</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (5).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>905</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (6).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>906</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (7).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>907</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (8).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>908</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (9).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>909</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (10).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>910</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (11).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>911</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (12).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>912</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (13).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>913</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (14).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>914</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (15).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>915</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (16).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>916</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/tumba/1 (17).jpg" alt="#">
+		<div class="carusel-caption">
+			<h2>917</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_8" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_8" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+												<div class="img-work col-md-6">
+							<img src="img/project-home/9.jpg" alt="">
+							<h3>Кровати</h3>
+							
+							<button class="btn btn-info" data-toggle="modal" data-target="#myModal8">Смотреть работы</button>
+<div id="myModal8" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button class="close" data-dismiss="modal">x</button>
+		<h2 class="modal-tittle">Любого размера, цвета и комплектации!</h2>
+		<p>При обращении по телефону, называйте пожалуйста номер понравивщегося изделия</p>
+
+	</div>	
+	<div class="modal-body">
+		<div id="carousel_9" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+			<li data-target="#carousel1" data-slide-to="5"></li>
+			<li data-target="#carousel1" data-slide-to="6"></li>
+			<li data-target="#carousel1" data-slide-to="7"></li>
+			<li data-target="#carousel1" data-slide-to="8"></li>
+			<li data-target="#carousel1" data-slide-to="9"></li>
+			<li data-target="#carousel1" data-slide-to="10"></li>
+			<li data-target="#carousel1" data-slide-to="11"></li>
+			<li data-target="#carousel1" data-slide-to="12"></li>
+			<li data-target="#carousel1" data-slide-to="13"></li>
+			<li data-target="#carousel1" data-slide-to="14"></li>
+			<li data-target="#carousel1" data-slide-to="15"></li>
+			<li data-target="#carousel1" data-slide-to="16"></li>
+			<li data-target="#carousel1" data-slide-to="17"></li>
+			<li data-target="#carousel1" data-slide-to="18"></li>
+			<li data-target="#carousel1" data-slide-to="19"></li>
+			<li data-target="#carousel1" data-slide-to="20"></li>
+			<li data-target="#carousel1" data-slide-to="21"></li>
+			<li data-target="#carousel1" data-slide-to="22"></li>
+			<li data-target="#carousel1" data-slide-to="23"></li>
+			<li data-target="#carousel1" data-slide-to="24"></li>
+			<li data-target="#carousel1" data-slide-to="25"></li>
+			<li data-target="#carousel1" data-slide-to="26"></li>
+			<li data-target="#carousel1" data-slide-to="27"></li>
+			<li data-target="#carousel1" data-slide-to="28"></li>
+			<li data-target="#carousel1" data-slide-to="29"></li>
+			<li data-target="#carousel1" data-slide-to="30"></li>
+			<li data-target="#carousel1" data-slide-to="31"></li>
+			<li data-target="#carousel1" data-slide-to="32"></li>
+			<li data-target="#carousel1" data-slide-to="33"></li>
+			<li data-target="#carousel1" data-slide-to="34"></li>
+			<li data-target="#carousel1" data-slide-to="35"></li>
+			<li data-target="#carousel1" data-slide-to="36"></li>
+			<li data-target="#carousel1" data-slide-to="37"></li>
+			<li data-target="#carousel1" data-slide-to="38"></li>
+			<li data-target="#carousel1" data-slide-to="39"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/krovati/1 (1).JPG" alt="#">
+		<div class="carousel-caption">
+			<h2>801</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (2).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>802</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (3).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>803</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (4).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>804</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (5).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>805</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (6).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>806</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (7).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>807</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (8).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>808</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (9).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>809</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (10).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>810</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (11).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>811</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (12).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>812</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (13).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>813</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (14).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>814</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (15).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>815</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (16).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>816</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (17).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>817</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (18).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>818</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (19).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>819</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (20).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>820</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (21).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>821</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (22).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>822</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (23).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>823</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (24).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>824</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (25).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>825</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (26).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>826</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (27).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>827</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (28).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>828</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (29).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>829</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (30).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>830</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (31).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>831</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (32).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>832</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (33).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>833</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (34).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>834</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (35).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>835</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (36).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>836</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (37).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>837</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (38).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>838</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (39).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>839</h2>
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/krovati/1 (40).JPG" alt="">
+		<div class="carousel-caption">
+			<h2>840</h2>
+		</div>
+	</div>
+</div>
+<a href="#carousel_9" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_9" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-danger" data-dismiss="modal"> Закрыть</button>
+	</div>
+	</div>
+</div>
+</div>
+						</div>
+					</div>
+				</div>
+<div class="chek-zerkalo container-fluid">
+	<div id="carousel_2" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel1" data-slide="0"></li>
+			<li data-target="#carousel1" data-slide-to="1"></li>
+			<li data-target="#carousel1" data-slide-to="2"></li>
+			<li data-target="#carousel1" data-slide-to="3"></li>
+			<li data-target="#carousel1" data-slide-to="4"></li>
+
+		</ol>
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/zerkalo/viber-image.jpg" alt="#">
+		<div class="carousel-caption">
+			
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/zerkalo/viber-image2.jpg" alt="#">
+		<div class="carousel-caption">
+			
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/zerkalo/viber-image3.jpg" alt="#">
+		<div class="carousel-caption">
+			
+		</div>
+	</div>
+	<div class="item">
+		<img src="img/zerkalo/viber-image4.jpg" alt="#">
+		<div class="carousel-caption">
+			
+		</div>
+	</div>
+	<div class="item"><img src="img/zerkalo/viber-image5.jpg" alt="#">
+		<div class="carousel-caption">
+		</div></div>
+</div>
+<a href="#carousel_2" class="left carousel-control" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel_2" class="right carousel-control" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+
+</a>
+	</div>
+
+</div>
+<div class="our-work centured container-fluid">
+				<h2><strong>Дизайн и изготовление мебели</strong> для Вашего дома или офиса, <strong>под ключ</strong></h2>
+					<div class="wrk">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/antalia.jpg" alt="">
+							<h3>Разработка уникального дизайна в стиле HItech</h3>
+							<p>Соблюдены основные правила минимализма и расположения мебели в загородном доме, цветовое решение согласно ландшафту. На каждой единице мебели установлены, лучшие в мире петли "Blum" <br> <strong>г.Москва</strong></p>
+							
+
+						</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/Kiev-design.jpg" alt="">
+							<h3>Минималистический дизайн для гостиной загородного дома</h3>
+							<p>Нами выполнены: журнальный столик и тумба под телевизор. Обе единицы мебели изготовлены без швов и стыков. <br> <strong>г.Санкт-Питербург</strong></p>
+							
+
+						</div>
+					</div>
+					<div class="wrk">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/Moskou.jpg" alt="">
+							<h3>Дизайн квартиры студийного типа воплощенный в жизнь</h3>
+							<p>Разработано и произведено мебельное решение из встроеных элементов мебели с функциями автоматического открытия и закрытия цветовая гамма подобрана исходя из желаний заказчика. <br> <strong>г.Минск</strong></p>
+							
+
+						</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/Moskou2.jpg" alt="">
+							<h3>Мебель для загородного дома в стиле "Прованс"</h3>
+							<p>Все выполнено в лучших традициях мебели из массива. Пройдены все стадии обработки дерева.<br> <strong>Подмосковье</strong></p>
+							
+
+						</div>
+					</div>
+					<div class="row wrk">
+						<div class="img-work col-md-6">
+							<img src="img/project-home/lux-design-turkish.jpg" alt="">
+							<h3>Разработка и изготовление мебели для спальни</h3>
+							<p>Вся мебель выполнена без швов и стыков, отлично отражает индивидуальность хозяев, а так же создает уют в таком таинственном месте, как спальня. Идеальное решение для молодой пары<br> <strong>г.Москва</strong></p>
+							
+
+									</div>
+						<div class="img-work col-md-6">
+							<img src="img/project-home/SPB-kuhnya.jpg" alt="">
+							<h3>Дизайн кухни загородного дома</h3>
+							<p>Изготовлена по стандартам европейского качества, необходимо было подобрать ультрамодный дизайн кухни, но со строгим и элегантным дизайном, а так же высокой функциональностью. <br> <strong>г. Минск</strong></p>
+							
+
+						</div>
+					</div>
+				</div>
+<div class="footer">
+	<div class="city">
+		<h4>г.Минск</h4>
+		<div class="mail">
+			<h4>agomebel@gmail.com</h4>
+			<div class="phones">
+				<h4>+375 (29) 611 27 47</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+           
+
+
+
+
+
+
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+					<!-- Latest compiled and minified JavaScript -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+				<script src="js/main.js"></script>
+			</body>
+			</html>

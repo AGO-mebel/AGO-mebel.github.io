@@ -1,67 +1,90 @@
-@media only screen and (max-width: 992px) {
-    .container { width: 100%;
-    }
-    h4 {font-size: 24px;}
-    .slider {width: 100%;
-    }
-    video {width: 70%;}
-    .vd a {display: none;}
-    .garant i {font-size: 50px;
-    margin-top: 10px;}
-    .garant hr {width: 20%;}
-    
-}
-@media only screen and (max-width: 768px){
-    .header-text {color: #fff;
-    font-size: 20px;
-    display: block;
-    padding: 15px;
-    border: 1px solid #fff;
-    width: 100%;
-    height: auto;
-background: rgba(0, 0, 0, 0.3);
-margin: 0 auto;
-    padding-top: 8%;
-    padding-bottom: 9%;
-}
-.header-text p {display: none;}
-.modal1:target {width: 100%;
-padding: 0;
-margin: 0;}
+/*==========  Desktop First Method  ==========*/
+/*Запись образца .класс/ид {}*/
 
-    
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
 }
-@media only screen and (max-width: 400px){
-form {
-    display: none;
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.pre {flex-direction: column;}
+.header {flex-direction: column;
+		justify-content: space-around;}
+		.cta {flex-direction: column;}
+		form {margin-top: 3rem;}
+	.footer {text-align: center;
+		color: #fff;
+		font-size: 2rem;}
+		.wrk {flex-direction: column;}
 }
 
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.fasad {display: none;}
+	.pre {flex-direction: column;}
+	.section-cta {display: none;}
+	.header {flex-direction: column;
+		justify-content: space-around;}
+	.footer {text-align: center;
+		color: #fff;
+		font-size: 2rem;}
+		.wrk {flex-direction: column;}
+
 }
-@media only screen and (max-width: 320px) {
-    .container {width: 100%;
-    background-color: none;}
-    p {font-size: 12px;
-    display: block;
-    text-align: center;padding: 0;
-    margin: 0 auto;}
-    form {background: none;}
-    .form-h4 {font-size: 14px;}
-    .submit {font-size: 10px;
-    width: 150px;}
-    form input {width: 150px;
-    float: left;}
-    .header-text {color: #fff;
-    font-size: 20px;
-    display: block;
-    padding: 15px;
-    border: 1px solid #fff;
-    width: 100%;
-    height: auto;
-background: rgba(0, 0, 0, 0.3);
-margin: 0 auto;
-    padding-top: 8%;
-    padding-bottom: 9%;
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.pre {flex-direction: column;}
+	.section-cta {display: none;}
+	.header {flex-direction: column;
+		justify-content: space-around;}
+	.footer {text-align: center;
+		color: #fff;
+		font-size: 2rem;}
+		.wrk {flex-direction: column;}
+		.fasad {display: none;}
 }
-.header-text p {display: none;}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.pre {flex-direction: column;}
+	.section-cta {display: none;}
+	.header {flex-direction: column;
+		justify-content: space-around;}
+	.footer {text-align: center;
+		color: #fff;
+		font-size: 2rem;}
+		.wrk {flex-direction: column;}
+		.fasad {display: none;}
+}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
